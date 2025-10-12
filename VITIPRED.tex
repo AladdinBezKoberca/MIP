@@ -1,0 +1,53 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} 
+\usepackage[hidelinks]{hyperref} 
+\usepackage{titling}
+\usepackage{cite}
+
+
+\pagestyle{headings}
+
+\title{Predikcia a signalizácia potreby ošetrenia viniča: Príprava prediktívnych modelov ošetrovania viniča na základe porovnania dlhodobých klimatických trendov s aktuálnymi meteorologickými údajmi pomocou využitia štatistickej analýzy a výsledkov výskumu chorôb a škodcov viniča\thanks{}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Ondrej Farský \quad Michal Farbrici \quad Adam Džubák \quad Lukáš Čimo\\[3pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\footnotesize\texttt{xfarsky@stuba.sk, xfabrici@stuba.sk, xdzubak@stuba.sk, xcimo@stuba.sk}}}
+
+\date{\small 9. október 2025} 
+
+
+
+\begin{document}
+
+\maketitle
+\begingroup
+  \renewcommand\thefootnote{\fnsymbol{footnote}} % 1→*, 2→†, …
+  \footnotetext[1]{Semestrálny projekt v predmete Metódy inžinierskej práce,
+  ak. rok 2025/26, vedenie: Ivan Kapustík.}
+\endgroup
+
+\vspace*{-0.6cm}
+
+\begin{abstract}
+\begin{center}
+\begin{minipage}{0.96\textwidth}
+\footnotesize
+\setlength{\parskip}{0.25\baselineskip} 
+\noindent
+Projekt sa zameriava na vývoj a implementáciu prediktívnych modelov, ktoré umožnia včasnú signalizáciu potreby ošetrenia viniča proti chorobám a škodcom. Cieľom je prepojiť aktuálne meteorologické údaje (teploty a zrážky) s dlhodobými klimatickými trendmi (tridsaťročné týždenné priemery zrážok a teplôt) a prediktívnym modelom počasia (trojtýždenný kĺzavý priemer zrážok a teplôt), čím sa vytvorí nástroj pre presné a efektívne rozhodovanie o potrebe chemického ošetrenia viniča. Výstupom projektu bude systém, ktorý dokáže na základe analýzy teploty a zrážok predpovedať pravdepodobnosť výskytu najvýznamnejších chorôb viniča (botrytída, peronospóra, guignardia, obaľovače).
+Projekt využíva metódy štatistickej analýzy, strojového učenia a modelovania klimatických dát, pričom čerpá z vedeckých poznatkov v oblasti fyziológie viniča a epidemiológie chorôb rastlín a kľúčových fenologických štádií viniča.
+Model bude testovaný na dátach malokarpatskej vinohradníckej oblasti s cieľom zabezpečiť jeho prenositeľnosť do rôznych klimatických podmienok severnej pologule.
+Očakávaným prínosom projektu je vytvorenie nástroja pre včasné a rýchle informovanie vinohradníkov o potrebe chemického ošetrenia viniča minimalizujúceho riziko jeho ochorenia. Predikčný systém tak prispeje k udržateľnému pestovaniu viniča a zvýšeniu kvality produkcie vína. Projekt spája odborné poznatky z meteorológie, biológie a dátovej analýzy a spracovania. Zároveň vytvára základ pre moderný prístup k vinohradníckemu manažmentu v podmienkach klimatickej zmeny.
+\end{minipage}
+\end{center}
+\end{abstract}
+
+\end{document}
