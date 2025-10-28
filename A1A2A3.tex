@@ -1,0 +1,90 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,slovak,a4paper]{coursepaper}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Adam Džubák\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xdzubak@stuba.sk}}
+	}
+
+\date{\small 28. októbra 2015} % upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\ldots
+\end{abstract}
+
+
+
+\section{AA-A1}
+01 nic  \\
+02  9.10.2025  \\
+03 Predikcia a signalizácia potreby ošetrenia viniča \\
+04 VITIPRED \\
+05 Agroinformatika a automatiácia v poľnohospodárstve \\
+06 Vývoj \\
+07 22.6.2025 \\
+08 22.11.2025 \\
+09 Projekt sa zameriava na vývoj a implementáciu prediktívnych modelov, ktoré umožnia
+včasnú signalizáciu potreby ošetrenia viniča proti chorobám a škodcom. Cieľom je prepojiť aktuálne meteorologické údaje (teploty a zrážky) s dlhodobými klimatickými trendmi (tridsaťročné týždenné priemery zrážok a teplôt) a prediktívnym modelom počasia (trojtýždenný kĺzavý priemer zrážok a teplôt), čím sa vytvorí nástroj pre presné a efektívne
+rozhodovanie o potrebe chemického ošetrenia viniča. Výstupom projektu bude systém,
+ktorý dokáže na základe analýzy teploty a zrážok predpovedať pravdepodobnosť výskytu
+najvýznamnejších chorôb viniča (botrytída, peronospóra, guignardia, obaľovače). Projekt
+využíva metódy štatistickej analýzy, strojového učenia a modelovania klimatických dát,
+pričom čerpá z vedeckých poznatkov v oblasti fyziológie viniča a epidemiológie chorôb
+rastlín a kľúčových fenologických štádií viniča. Model bude testovaný na dátach malokarpatskej vinohradníckej oblasti s cieľom zabezpečiť jeho prenositeľnosť do rôznych klimatických podmienok severnej pologule. Očakávaným prínosom projektu je vytvorenie nástroja
+pre včasné a rýchle informovanie vinohradníkov o potrebe chemického ošetrenia viniča
+minimalizujúceho riziko jeho ochorenia. Predikčný systém tak prispeje k udržateľnému
+pestovaniu viniča a zvýšeniu kvality produkcie vína. Projekt spája odborné poznatky z
+meteorológie, biológie a dátovej analýzy a spracovania. Zároveň vytvára základ pre moderný prístup k vinohradníckemu manažmentu v podmienkach klimatickej zmeny. \\
+10  Slovenská Technická Univerzita  \\
+11 109 800 eur \\
+12 nic \\
+13 119 800 eur \\
+
+\section{AA-A2}
+01 Fakulta Infomatiky a Informačných Technológií \\
+02 FIIT \\
+03 Ilkovičova 2 \\
+04 00397687 \\
+05 Ministerstvo školstva, vedy, výskumu a športu SR\\
+06 Štátna príspevková organizácia \\
+07  \\
+08 prof. Ing. Maximilián Strémy, PhD.\\
+09 prof. Ing. Ivan Kotuliak, PhD.\\
+
+\section{AA-A3}
+Adam Džubák   	10.5.2006	1440\\
+Michal Fabrici   	16.12.2005	1440\\
+Lukáš Čimo 	 13.1.2006		1440\\
+Ondrej Fársky  	 25.9.2005	1440\\
+
+
+
+
+\input{example.tex}
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
