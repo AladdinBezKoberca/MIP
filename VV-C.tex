@@ -2,36 +2,40 @@
 \usepackage[utf8]{inputenc}
 \usepackage[slovak]{babel}
 \usepackage{amsmath}
-\usepackage{booktabs} % Pre profesionálne tabuľky
-\usepackage{geometry} % Pre úpravu okrajov, ak je potrebné
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{longtable} % Pre rozsiahle tabuľky, ktoré sa môžu lámať cez strany
+\usepackage{array}     % Pre úpravu stĺpcov
 
-\geometry{a4paper, margin=1in} % Príklad nastavenia okrajov
+\geometry{a4paper, margin=1in}
 
 \begin{document}
 
-\section*{VV-C}
+\section*{VV-C: Rozpočet a Rozpis predpokladaných nákladov}
+
+\subsection*{Rozpočet projektu v EUR(€)}
 
 \begin{table}[h]
     \centering
-    \text{Rozpočet projektu v EUR(€)}
+    \caption{Prehľad rozpočtu projektu (Rok 2025)}
     \label{tab:rozpocet}
     \begin{tabular}{llrr}
         \toprule
         \textbf{Kód} & \textbf{Popis nákladov} & \textbf{Rok 2025} & \textbf{Celkovo} \\
         \midrule
-        01 & Bežné priame náklady & 10\,000 & 10\,000 \\
-        02 & Mzdové náklady a ostatné osobné náklady & 40\,000 & 40\,000 \\
-        03 & Zdravotné a sociálne poistenie & 14\,000 & 14\,000 \\
-        04 & Cestovné náklady & 3\,000 & 3\,000 \\
-        05 & Materiál & 2\,000 & 2\,000 \\
-        06 & Služby & 18\,000 & 18\,000 \\
-        07 & Energie, vodné, stočné, komunikácie & 1\,500 & 1\,500 \\
-        08 & Náklady na popularizáciu & 3\,000 & 3\,000 \\
-        09 & Bežné nepriame náklady & 18\,300 & 18\,300 \\
+        01 & Bežné priame náklady & 9\,107 & 9\,107 \\
+        02 & Mzdové náklady a ostatné osobné náklady & 36\,430 & 36\,430 \\
+        03 & Zdravotné a sociálne poistenie & 12\,750 & 12\,750 \\
+        04 & Cestovné náklady & 2\,732 & 2\,732 \\
+        05 & Materiál & 1\,821 & 1\,821 \\
+        06 & Služby & 16\,394 & 16\,394 \\
+        07 & Energie, vodné, stočné, komunikácie & 1\,366 & 1\,366 \\
+        08 & Náklady na popularizáciu & 2\,732 & 2\,732 \\
+        09 & Bežné nepriame náklady & 16\,668 & 16\,668 \\
         \midrule
-        \multicolumn{2}{l}{\textbf{Bežné náklady spolu}} & \textbf{109\,800} & \textbf{109\,800} \\
+        \multicolumn{2}{l}{\textbf{Bežné náklady spolu}} & \textbf{100\,000} & \textbf{100\,000} \\
         \midrule
-        \multicolumn{2}{l}{\textbf{Celkové náklady z APVV}} & \textbf{109\,800} & \textbf{109\,800} \\
+        \multicolumn{2}{l}{\textbf{Celkové náklady z APVV}} & \textbf{100\,000} & \textbf{100\,000} \\
         \midrule
         \multicolumn{4}{l}{\textbf{Spolufinancovanie}} \\
         \midrule
@@ -39,9 +43,46 @@
         & Zahraničné & 0 & 0 \\
         & Súkromné & 0 & 0 \\
         \midrule
-        \multicolumn{2}{l}{\textbf{Celkové náklady projektu}} & \textbf{119\,800} & \textbf{119\,800} \\
+        \multicolumn{2}{l}{\textbf{Celkové náklady projektu}} & \textbf{100\,000} & \textbf{100\,000} \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\clearpage % Pre lepšie oddelenie
+
+\subsection*{Rozpis predpokladaných nákladov uplatňovaných z APVV - Odôvodnenie}
+
+\begin{longtable}{>{\centering\arraybackslash}m{0.05\textwidth} m{0.25\textwidth} >{\centering\arraybackslash}m{0.1\textwidth} m{0.5\textwidth}}
+    \toprule
+    \textbf{Kód} & \textbf{Položka} & \textbf{Suma (EUR)} & \textbf{Odôvodnenie nákladu (v kontexte projektu)} \\
+    \midrule
+    \endhead
+    \bottomrule
+    \multicolumn{4}{r}{\textit{Pokračovanie na nasledujúcej strane...}} \\
+    \endfoot
+    \bottomrule
+    \endlastfoot
+
+    01 & Bežné priame náklady & 9\,107 & Pokrytie rôznych drobných a paušálnych prevádzkových nákladov na podporu výskumnej činnosti, ako sú poplatky za open-access publikácie, menšie administratívne poplatky a podpora prevádzky. \\
+    \midrule
+    02 & Mzdové náklady a ostatné osobné náklady & 36\,430 & Financovanie kľúčového personálu: \textbf{Dátový analytik / Vývojár} (cca 0.6 FTE) a \textbf{Odborný garant / Agronóm} (cca 0.4 FTE). Suma zabezpečí vysokokvalifikovanú expertízu pre vývoj, testovanie a implementáciu modelov strojového učenia, analýzu klimatických dát a overovanie výsledkov vo vinohradníckej praxi. \\
+    \midrule
+    03 & Zdravotné a sociálne poistenie & 12\,750 & Povinné odvody do fondov sociálneho a zdravotného poistenia. Vypočítané v súlade so zákonnými sadzbami z mzdových nákladov (riadok 02). \\
+    \midrule
+    04 & Cestovné náklady & 2\,732 & Náklady na tuzemské služobné cesty spojené s \textbf{terénnym testovaním modelov} a \textbf{zberom validačných dát} v Malokarpatskej vinohradníckej oblasti. Zahŕňa náklady na pohonné hmoty, ubytovanie a stravné pre terénnych pracovníkov. \\
+    \midrule
+    05 & Materiál & 1\,821 & Nákup drobného špecializovaného materiálu a IT príslušenstva (napr. senzory pre lokálne merania v testovacej oblasti, dátové úložiská, tonery, kancelárske potreby). \\
+    \midrule
+    06 & Služby & 16\,394 & Kľúčová položka pre dátový projekt: \textbf{Cloudové služby} (hosting a výpočtový výkon pre trénovanie prediktívnych modelov), \textbf{Licencie na špecializovaný softvér} (analytické a GIS nástroje), prípadné expertné konzultácie v oblasti meteorológie a fyziológie viniča. \\
+    \midrule
+    07 & Energie, vodné, stočné, komunikácie & 1\,366 & Pokrytie bežnej prevádzkovej réžie spojené s výskumnými aktivitami, vrátane spotreby elektrickej energie pre výpočtovú techniku, internetového pripojenia a telekomunikačných služieb. \\
+    \midrule
+    08 & Náklady na popularizáciu & 2\,732 & Financovanie tvorby a správy informačného rozhrania/webovej aplikácie pre vinohradníkov, grafické spracovanie výstupov a distribúcia výsledkov vinohradníckej komunite. \\
+    \midrule
+    09 & Bežné nepriame náklady & 16\,668 & Pokrytie administratívnej a technickej réžie. Vypočítané ako \textbf{20\%} z celkových priamych bežných nákladov (súčet 01 až 08), v súlade s predpokladanou maximálnou sadzbou pre túto kategóriu. \\
+    \midrule
+    \multicolumn{3}{l}{\textbf{CELKOVÉ NÁKLADY Z APVV}} & \textbf{100 000} \\
+
+\end{longtable}
 
 \end{document}
